@@ -25,6 +25,28 @@
             {first:"Marion", last:"Cobretti", credit:"Cobra" }
         ]
         
+        var body = document.querySelector("body")
+	
+	    str = ""
+	
+	    for (i = 0; i < people.length; i++)
+	    {
+		    str += "<div id='" + i + "' class='border'>"
+            str  += "<p>";
+    	    str += people[i].first;
+      	    str  +="</p>"
+		
+            str  += "<p>";
+    	    str += people[i].last;
+      	    str  +="</p>"
+
+            str  += "<p>";
+    	    str += people[i].credit;
+      	    str  +="</p>"
+      	    str+= "</div>"
+
+	    }
+	    body.innerHTML = str;
     </script>
-    
-    </html>
+
+</html>
