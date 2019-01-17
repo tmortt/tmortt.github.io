@@ -1,0 +1,57 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>For In Loops</title>
+		<meta charset="UTF-8">
+	</head>
+    <body>
+    
+    <p>Thomas Mortell</p>
+            <script type="text/javascript">
+            var a = "hhh" 
+            console.log("a: "+typeof a);
+            var b = 3.14 
+            console.log("b: "+typeof b);
+            var c = false 
+            console.log("c: "+typeof c);
+            
+            function add(a,b)
+            {
+                return a+b;
+            }
+            
+            console.log("5 + 2=",add(5,2));
+            
+            var myArray = [];
+            for (let i=0; i<100; i++)
+            {
+            myArray[i] = {index:i+1, label:"Number"};
+    
+            if (myArray[i].index % 6 == 0)
+            {
+            myArray[i].label = "Fizz Buzz";
+            }
+            else if (myArray[i].index % 2 == 0)
+            {
+            myArray[i].label = "Fizz";
+            }
+            else if (myArray[i].index % 3 == 0)
+            {
+            myArray[i].label = "Buzz";
+            }
+            else
+            {
+            i;
+            } 
+            
+            for (value in  myArray[i]){
+                console.log(myArray[i][value]);
+            }
+            }
+            
+            
+                           
+            
+            </script>
+    </body>
+</html>
