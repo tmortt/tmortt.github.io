@@ -31,11 +31,22 @@
 	for (i = 0; i < people.length; i++)
 	{
 	
-            var div = document.createElement("div");
+            var div = document.createElement('div');
             body.appendChild(div)
+            div.setAttribute("id", String(i));
+            div.className = "border";
+           
+            for(value in people[i]){
+            var p = document.createElement('p');
+            div.appendChild(p)
 
-            var p = document.createElement("p");
-            body.appendChild(p)
+            var message = document.createTextNode(people[i][value]);
+            p.appendChild(message);
+        
+
+            
+
+            }
     
 	}
 
